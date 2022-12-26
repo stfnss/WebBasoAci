@@ -50,6 +50,13 @@ body {
   border-radius: 5px;
   opacity: 0.6;
 }
+.navbar-dua > ul > li:hover {
+  background-color: crimson;
+  color: #eaeaea;
+  transition: all 0.2s ease-in-out;
+  transition-delay: 0.2s;
+  opacity: 3;
+}
 .navbar-dua > ul > li > a {
   text-decoration: none;
   color: white;
@@ -143,7 +150,7 @@ body {
     align-items: center;
     z-index: 2;
     background-color: #222;
-    transform: translateX(100%);
+    transform: translateX(0%);
     transition: all 1s;
     opacity: 0;
     overflow: hidden;
@@ -300,7 +307,7 @@ body {
 .content-dua .card {
   min-width: 18rem;
 }
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   display: none;
 }
 .container-tiga {
@@ -340,6 +347,68 @@ body {
   min-width: 18rem;
 }
 /* Content Close */
+/* Content Tiga */
+.container-empat {
+  margin: 40px 0px 0px 65px;
+  width: 90%;
+  height: 100px;
+  background-image: url(assets/greybackground.jpg);
+  opacity: 0.6;
+  border-radius: 20px;
+}
+.container-empat .wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+.container-empat .wrapper #img1 {
+  width: 50px;
+  height: 50px;
+  margin: 25px 0px 0px 15px;
+}
+.container-empat .wrapper #img2 {
+  width: 50px;
+  height: 50px;
+  margin: 25px 0px 0px 15px;
+}
+.container-empat .wrapper #img3 {
+  width: 220px;
+  height: 70px;
+  margin: 15px 0px 0px 15px;
+}
+/* Content Tiga Close */
+/* Content Empat */
+.container-lima {
+  width: 90%;
+  height: 320px;
+  background-color: #222;
+  margin: 40px 0px 0px 65px;
+  border-radius: 25px;
+}
+.container-lima .content1 .text1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 10px;
+  color: #eaeaea;
+}
+.container-lima .content2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.container-lima .content2 .card {
+  display: flex;
+  flex-direction: row;
+  width: 45%;
+  margin-left: 15px;
+}
+.container-lima .content2 .card > img {
+  width: 18rem;
+  height: 14rem;
+}
+/* Content Empat Close */
 /* Responsive Content */
 @media screen and (max-width: 576px){
   .content-satu {
@@ -350,6 +419,7 @@ body {
     align-items: center;
     margin-top: 10px;
     overflow: hidden;
+    box-sizing: border-box;
   }
   .content-dua {
     box-sizing: border-box;
@@ -365,6 +435,57 @@ body {
   }
   .container-tiga {
     overflow: hidden;
+  }
+  .container-empat {
+    min-width: 90%;
+    margin: 20px 15px 0px 15px;
+  }
+  .container-empat .wrapper {
+    overflow-x: scroll;
+    justify-content: start;
+  }
+  .container-empat .wrapper #img1 {
+    min-width: 50px;
+  }
+  .container-empat .wrapper #img2 {
+    min-width: 50px;
+  }
+  .container-empat .wrapper #img3 {
+    min-width: 220px;
+    margin-right: 15px;
+  }
+  .container-lima {
+    justify-content: center;
+    background-color: #333;
+    margin: 0px 0px 0px 10px;
+    width: 95%;
+    height: 750px;
+  }
+  .container-lima .content1 .text1 {
+    padding: 0;
+    margin-top: 15px;
+  }
+  .container-lima .content2 {
+    flex-direction: column;
+  }
+  .container-lima .content2 .card {
+    flex-direction: column;
+    width: 391px;
+    max-width: 97.3%;
+    background-color: #eaeaea;
+    margin-left: 0;
+    margin-top: 10px;
+    border-radius: 10px;
+  }
+  .container-lima .content2 .card > img {
+    width: 21rem;
+    border-radius: 10px;
+  }
+  .container-lima .content2 .card .card-text {
+    width: 18rem;
+  }
+  .container-lima .content2 .card .card-body {
+    width: 50px;
   }
 }
 @media screen and (max-width:320px) {
