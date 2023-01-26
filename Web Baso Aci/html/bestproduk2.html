@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product 1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="./../css/produk.css">
+</head>
+<body>
+    <nav class="container-satu">
+        <div class="body">
+            <div class="navbar">
+                <a href="./../index.html">
+                    <div class="text-satu">Baso</div>
+                    <div class="text-dua">Aci</div>
+                </a>
+            </div>
+            <div class="navbar-dua">
+                <ul>
+                    <li><a href="./../index.html">home</a></li>
+                    <li><a href="./../html/about.html">about</a></li>
+                    <li><a href="./../html/service.html">service</a></li>
+                </ul>
+            </div>
+            <div class="menu-toggle">
+                <input type="checkbox">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar Close -->
+
+    <!-- Content Produk -->
+    <div class="container-produk">
+        <div class="wrapper">
+            <div class="content1">
+                <img src="./../assetsproduk/assetsbasoacitulangrungu.jpeg" alt="" style="margin-right: 10px;">
+                <img src="./../assetsproduk/assetsbasoacitulangrungu.jpeg" alt="">
+            </div>
+            <div class="content2">
+                <div class="text-header">Baso Aci Tulang Rungu</div>
+                <hr>
+                <div class="text-content-satu">Description Product</div>
+                <div class="text-content-dua">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi amet quisquam architecto praesentium adipisci soluta hic magni nemo sunt, voluptatem repellat commodi debitis alias inventore.</div>
+                <div class="content-product-tiga">
+                  <div class="harga-product">RP 24.000</div>
+                </div>
+                <div class="text-content-empat">
+                  <div class="text1">pesan</div>
+                  <div class="text2">|</div>
+                  <div class="text3">via</div>
+                </div>
+                <div class="button-product">
+                  <a onclick="kirimWhatsapp()"><button>Whatsapp</button></a>
+                  <script>
+                    function kirimWhatsapp(){
+                        location.assign("https://wa.me/6282260875811/?text=Aku%20Mau%20Pesan%20Bakso%20Aci");
+                        }
+                  </script>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Content Produk Close -->
+
+    <script src="./../js/script.js"></script>
+</body>
+</html>
